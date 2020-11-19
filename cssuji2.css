@@ -1,0 +1,104 @@
+.header,h3{
+    padding: 8px;
+    color: white;
+    background: linear-gradient(to right,#66CDAA, #808080);
+}
+.penjual,h5{
+    color: white;
+    background: linear-gradient(to right, #778899,#20B2AA);
+    width: 30.5%;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    padding-left: 20px;
+    color: white;
+}
+.rincian{
+    position: relative;
+    left: 0px;
+    top: 10px;
+    width: 30.5%;
+    height: 500px;
+    background: transparent;
+    border: 2px solid #778899;
+    border-radius: 10px;
+    overflow: auto;
+}
+.hasil{
+    position: relative;
+    margin-top: 20px;
+    color: black;
+    background: linear-gradient(to right, #20B2AA,#778899);
+    width: 30.4%;
+    height: 100px; 
+    padding-top: 3px;
+    padding-left: 10px;
+    border: 2px solid #2F4F4F;
+    border-radius: 10px;
+    
+}
+.item{
+    position: absolute;
+    left: 30.8%;
+    top: 73px;
+    width: 68.2%;
+    height: 50px;
+    color: white;
+    background: linear-gradient(to right, #20B2AA, #696969);
+    font-size: 30px;
+    padding-left: 15px;
+    text-align: center;
+
+}
+.jualan{
+    position: absolute;
+    top: 134px;
+    left: 31.5%;
+    width: 67%;
+    height: 610px;
+    background: transparent;
+    padding: 10px;
+    overflow: auto;
+    border: 2px solid #2F4F4F;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+}
+.content {
+ background-color: transparent;
+ border: 2px solid whitek;
+ overflow: auto;
+
+}
+.thumbnail {
+ background-color: white;
+ color: #00BFFF;
+ text-align: center;
+ padding: 10px;
+ width: 210px;
+ height: 240px;
+ float: left;
+ margin: 4px;
+ border-radius: 10px;
+ border: 2px solid ;
+ cursor: pointer;
+}
+
+.belanja2{
+    background: linear-gradient(to right,#7303c0, cyan);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 60px;
+    width: 90%;
+    margin: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+   }
+
+   img{
+    width:190px;
+    height: 150px;
+}
+

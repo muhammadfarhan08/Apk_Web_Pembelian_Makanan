@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <script src="jquery.js" ></script>
+    <title>Document</title>
+    <style>
+    .belanja2{
+    background: linear-gradient(to right,cyan,cyan,white,white);
+    color: black;
+    text-align: center;
+    padding: 10px;
+    height: 85px;
+    width: 90%;
+    margin: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+   }
+    
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+      <div class="row"> 
+        <div class="col-sm-12" style="background-color: rgb(19, 45, 116);height: 80px;padding-left: 20px;padding-top: 9px;"><h1 style="color: white;">Starbhak Mart</h1></div>
+          <div class="col-4" style="background-color:transparent;height: 600px;">
+            <div class="row"> 
+                   
+              <div class="col-12" style="background-color: rgb(73, 163, 236);margin-top: 10px;padding: 5px;"><h3 style="text-align: center;">Owner : Customer  </h3></div>
+                    
+
+                <div class="col-12" style="background-color: whitesmoke;margin-top: 10px;padding: 4px; height: 400px;overflow: auto;">
+                  <div class="belanja" id="list"></div>  
+                    </div>
+                    <div class="col-md-6" style="background-color: rgb(73, 163, 236);margin-top: 10px;padding: 10px;">Jumlah : <b id="jumlah"></b></div>
+                    <div class="col-md-6" style="background-color: rgb(73, 163, 236);margin-top: 10px;padding: 10px;">Tax : <b id="tax"></b></div>
+                    <div class="col-md-6" style="background-color: rgb(73, 163, 236);margin-top: 10px;padding: 10px;">Total Amount : <b id="total"></b></div>
+                    <div class="col-md-6" style="background-color: rgb(73, 163, 236);margin-top: 10px;padding: 10px;"><button class="btn btn-info">Payment</button></div>
+                     
+    </div>
+      </div>
+       <div class="col-8" style="background-color: transparent;height: 565px;padding-left: 10px;overflow: auto;margin-top: 9px;">
+         <nav class="sticky-top"> <div class="col-12" style="background-color: white;margin-bottom: 10px;padding: 5px;"><h3>Item List</></div></nav>
+          <!-- <img src="search.png" width="60px" style="float: right;"> -->
+          
+     <div class="card" style="width: 12.65rem;overflow: auto;float: left;">
+      <img src="ayam-crispy-bumbu-bali.jpg" title="Es campur" class="card-img-top" alt="..."  style="height:137px;">
+        <div class="card-body">
+        <h5 class="card-title">Ayam Crispy</h5>
+        <p style="text-align: center;">Rp.25.000</p>
+        <center><button class="btn btn-primary" style="width: 90%;" id="escampur">Buy</button></center>
+      </div>
+    </div>
+    <div class="card" style="width: 12.65rem;overflow: auto;float: left;">
+      <img src="Mie Ayam.jpg" class="card-img-top" alt="..."  style="height:137px;">
+      <div class="card-body">
+        <h5 class="card-title">Mie Ayam</h5>
+        <p style="text-align: center;">Rp.5000</p>
+        <center><button class="btn btn-primary" style="width: 90%;" id="escendol">Buy</button></center>
+      </div>
+    </div>
+    <div class="card" style="width: 12.65rem;overflow: auto;float: left;">
+      <img src="Seblek.jpg" class="card-img-top" alt="..."  style="height: 137px;">
+      <div class="card-body">
+        <h5 class="card-title">Seblek Jahanam</h5>
+        <p style="text-align: center;">Rp.5000</p>
+        <center><button class="btn btn-primary" style="width: 90%;" id="eskelapa">Buy</button></center>
+     </div>
+    </div>
+    <div class="card" style="width: 12.65rem;overflow: auto;float: left;">
+      <img src="nasiuduk.jpg" class="card-img-top" alt="..."  style="height: 137px;">
+      <div class="card-body">
+        <h5 class="card-title">Nasi Uduk</h5>
+        <p style="text-align: center;">Rp.5000</p>
+        <center><button class="btn btn-primary" style="width: 90%;" id="nasiuduk">Buy</button></center>
+      </div>
+    </div>
+    <div class="card" style="width: 12.65rem;overflow: auto;float: left;">
+      <img src="soto2.jpeg" class="card-img-top" alt="..."  style="height: 137px;">
+      <div class="card-body">
+        <h5 class="card-title">Soto</h5>
+        <p style="text-align: center;">Rp.10000</p>
+        <center><button class="btn btn-primary" style="width: 90%;" id="soto">Buy</button></center>
+      </div>
+    </div>
+    <div class="card" style="width: 12.65rem;overflow: auto;float: left;">
+      <img src="ayam-crispy-saus-madu.jpg" class="card-img-top" alt="..."  style="height:137px;">
+      <div class="card-body">
+        <h5 class="card-title">Ayam Madu</h5>
+        <p style="text-align: center;">Rp.22.000</p>
+        <center><button class="btn btn-primary" style="width: 90%;" id="ketoprak">Buy</button></center>
+      </div>
+    </div>
+    <div class="card" style="width: 12.65rem;overflow: auto;float: left;">
+          <img src="Ayam-Kecap-Sederhana.jpg" class="card-img-top" alt="..."  style="height: 137px;">
+          <div class="card-body">
+            <h5 class="card-title">Ayam Kecap</h5>
+            <p style="text-align: center;">Rp.22000</p>
+            <center><button class="btn btn-primary" style="width: 90%;" id="gadogado">Buy</button></center>
+      </div>
+    </div>
+    <div class="card" style="width: 12.65rem;overflow: auto;float: left;">
+          <img src="sate-ayam.jpg" class="card-img-top" alt="..." style="height: 137px;">
+          <div class="card-body">
+            <h5 class="card-title">Sate Ayam</h5>
+            <p style="text-align: center;">Rp.15000</p>
+            <center><button class="btn btn-primary" style="width: 90%;" id="sate">Buy</button></center>
+          </div>
+        </div>
+      </div>
+    </div>
+ <script>
+
+
+var show = document.getElementById("list");
+var tharga = document.getElementById("total");
+var htax = document.getElementById("tax");
+var jmlh = document.getElementById("jumlah");
+var dataNama = [];
+var dataHarga = [];
+
+function tampil() {
+    awal = 0;
+    show.innerHTML = "";
+    for (var a = 0; a < dataNama.length; a++) {
+        show.innerHTML +=
+        "<div class='belanja2'>" + dataNama[a] + "&nbsp" + dataHarga[a] + "<img src='e.png' width='60px' style='float: right;cursor;pointer;' onclick='hapus("+ a +")'  " + "</div>";
+        awal += dataHarga[a];
+        jmlh.innerHTML = "Rp " + awal;
+        var tax = awal * 10/100;
+        htax.innerHTML = "Rp " + tax;
+        var total = awal + tax;
+        tharga.innerHTML = "Rp " + total;
+    }
+    if(dataHarga.length == 0){
+            jmlh.innerHTML = "Rp. "+0;
+            htax.innerHTML = "Rp. "+0;
+            tharga.innerHTML = "Rp. "+0;
+  }
+}
+function hapus(a){
+    dataNama.splice(a,1);
+    dataHarga.splice(a,1);
+    tampil();   
+}
+$('#gadogado').click(function () {
+            var nama = "Ayam Crispy Bumbu Bali";
+            var harga = 24000;
+            dataNama.push(nama);
+            dataHarga.push(harga);
+            tampil()
+        });
+        $('#sate').click(function () {
+            var nama = "Mie Ayam";
+            var harga = 5000;
+            dataNama.push(nama);
+            dataHarga.push(harga);
+            tampil()
+        });
+        $('#soto').click(function () {
+            var nama = "Soto";
+            var harga = 10000;
+            dataNama.push(nama);
+            dataHarga.push(harga);
+            tampil()
+        });
+        $('#ketoprak').click(function () {
+            var nama = "Seblek";
+            var harga = 5000    ;
+            dataNama.push(nama);
+            dataHarga.push(harga);
+            tampil()
+        });
+        $('#nasiuduk').click(function () {
+            var nama = "Nasi Uduk";
+            var harga = 8000;
+            dataNama.push(nama);
+            dataHarga.push(harga);
+            tampil()
+        });
+        $('#eskelapa').click(function () {
+            var nama = "Es Kelapa";
+            var harga = 6000;
+            dataNama.push(nama);
+            dataHarga.push(harga);
+            tampil()
+        });
+        $('#escendol').click(function () {
+            var nama = "Ayam Crispy Saus Madu";
+            var harga = 23000;
+            dataNama.push(nama);
+            dataHarga.push(harga);
+            tampil()
+        });
+        $('#escampur').click(function () {
+            var nama = "Es Campur";
+            var harga = 9000;
+            dataNama.push(nama);
+            dataHarga.push(harga);
+            tampil()
+        });
+        $('#AyamKecap').click(function () {
+            var nama = "Ayam Kecap";
+            var harga = 25000;
+            dataNama.push(nama);
+            dataHarga.push(harga);
+            tampil()
+        });
+
+ </script>
+
+</body>
+</html>
